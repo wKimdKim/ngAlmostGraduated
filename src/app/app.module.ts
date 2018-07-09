@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GooglemapComponent } from './googlemap/googlemap.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GooglemapComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCEvH2lrBW9u5g3WAKb2AbZjjaxkhdhlO4'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
