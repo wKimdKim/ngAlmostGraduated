@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GooglemapComponent } from './googlemap/googlemap.component';
 import { AgmCoreModule } from '@agm/core';
+import { BannerComponent } from './banner/banner.component';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GooglemapComponent
+    GooglemapComponent,
+    BannerComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,
